@@ -17,7 +17,7 @@ Caso ele queira uma resposta detalhada você deve dizer passo a passo a resposta
 
 Caso ele queira somente a resposta você deve simplesmente enviar a resposta, de uma forma explicada, por escrito, mas de uma forma resumida, com palavras simples, para que todos entendam.`;
 
-    const response = await fetch(`https://api.gemini.url/chat?apiKey=${apiKey}`, {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
